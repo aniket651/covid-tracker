@@ -1,6 +1,17 @@
 var menutoggle = 0,indian_stats_toggle = 0,indian_test_toggle = 0,indian_state_toggle = 0,toggle_about=0;
+const navmenu = document.querySelector(".nav1");
+const section2 = document.querySelector(".sec2");
+const indiaheading = document.querySelector(".india");
+const section3 = document.querySelector(".sec3");
+const indiatesting = document.querySelector(".testing");
+const section4 = document.querySelector(".sec4");
+const indiastates = document.querySelector(".states");
+const section5 = document.querySelector(".sec5");
+const about1 = document.querySelector(".about");
+
+
 function pleaseopenmenu() {
-    const navmenu = document.querySelector(".nav1");
+    // const navmenu = document.querySelector(".nav1");
 	if (menutoggle === 0) {
 		navmenu.style = "display:flex";
 		menutoggle = 1;
@@ -11,8 +22,8 @@ function pleaseopenmenu() {
 	}
 }
 function openindiaoverall() {
-    const section2 = document.querySelector(".sec2");
-    const indiaheading = document.querySelector(".india");
+    // const section2 = document.querySelector(".sec2");
+    // const indiaheading = document.querySelector(".india");
 	if (indian_stats_toggle === 0) {
 		section2.style = "display:flex";
         indiaheading.style = "display:flex";
@@ -23,10 +34,29 @@ function openindiaoverall() {
         indiaheading.style = "display:none";
 		indian_stats_toggle = 0;
 	}
+	navmenu.style = "display:none";
+	menutoggle = 0;
+
+	// section2.style = "display:none";
+    // indiaheading.style = "display:none";
+	// indian_stats_toggle = 0;
+
+	section3.style = "display:none";
+	indiatesting.style = "display:none";
+	indian_test_toggle = 0;
+
+	section4.style = "display:none";
+	indiastates.style = "display:none";
+	indian_state_toggle = 0;
+
+	section5.style = "display:none";
+	about1.style = "display:none";
+	toggle_about = 0;
+
 }
 function openindiatesting() {
-    const section3 = document.querySelector(".sec3");
-    const indiatesting = document.querySelector(".testing");
+    // const section3 = document.querySelector(".sec3");
+    // const indiatesting = document.querySelector(".testing");
 	if (indian_test_toggle === 0) {
 		section3.style = "display:flex";
         indiatesting.style = "display:flex";
@@ -37,10 +67,29 @@ function openindiatesting() {
         indiatesting.style = "display:none";
 		indian_test_toggle = 0;
 	}
+
+	navmenu.style = "display:none";
+	menutoggle = 0;
+
+	section2.style = "display:none";
+    indiaheading.style = "display:none";
+	indian_stats_toggle = 0;
+
+	// section3.style = "display:none";
+	// indiatesting.style = "display:none";
+	// indian_test_toggle = 0;
+
+	section4.style = "display:none";
+	indiastates.style = "display:none";
+	indian_state_toggle = 0;
+
+	section5.style = "display:none";
+	about1.style = "display:none";
+	toggle_about = 0;
 }
 function openstatesoverall() {
-    const section4 = document.querySelector(".sec4");
-    const indiastates = document.querySelector(".states");
+    // const section4 = document.querySelector(".sec4");
+    // const indiastates = document.querySelector(".states");
 	if (indian_state_toggle === 0) {
 		section4.style = "display:flex";
         indiastates.style = "display:flex";
@@ -51,10 +100,28 @@ function openstatesoverall() {
         indiastates.style = "display:none";
 		indian_state_toggle = 0;
 	}
+	navmenu.style = "display:none";
+	menutoggle = 0;
+
+	section2.style = "display:none";
+    indiaheading.style = "display:none";
+	indian_stats_toggle = 0;
+
+	section3.style = "display:none";
+	indiatesting.style = "display:none";
+	indian_test_toggle = 0;
+
+	// section4.style = "display:none";
+	// indiastates.style = "display:none";
+	// indian_state_toggle = 0;
+
+	section5.style = "display:none";
+	about1.style = "display:none";
+	toggle_about = 0;
 }
 function openabout() {
-    const section5 = document.querySelector(".sec5");
-    const about1 = document.querySelector(".about");
+    // const section5 = document.querySelector(".sec5");
+    // const about1 = document.querySelector(".about");
 	if (toggle_about === 0) {
 		section5.style = "display:flex";
         about1.style = "display:flex";
@@ -65,6 +132,24 @@ function openabout() {
         about1.style = "display:none";
 		toggle_about = 0;
 	}
+	navmenu.style = "display:none";
+	menutoggle = 0;
+
+	section2.style = "display:none";
+    indiaheading.style = "display:none";
+	indian_stats_toggle = 0;
+
+	section3.style = "display:none";
+	indiatesting.style = "display:none";
+	indian_test_toggle = 0;
+
+	section4.style = "display:none";
+	indiastates.style = "display:none";
+	indian_state_toggle = 0;
+
+	// section5.style = "display:none";
+	// about1.style = "display:none";
+	// toggle_about = 0;
 }
 
 var icon = document.querySelector(".fas");
