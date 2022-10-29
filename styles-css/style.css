@@ -36,12 +36,11 @@ body{
     /* justify-content: center; */
     align-items: center;
     position: fixed;
-    top: 10vh;
     left: 0.5vw;
     z-index: 3;
     width: 20%;
     height: 100%;
-    border-radius: 0px 150px 100px 0px;
+    animation: 1s slide-in;
 }
 
 li{
@@ -53,6 +52,7 @@ li{
 }
 
 li:hover{
+    border-bottom: 1px solid red;
     color: tomato;
 }
 
@@ -270,4 +270,13 @@ div.div1{
     width:70vw;
 }
 
-
+@keyframes slide-in {
+    from{
+        width: 0%;
+        transform: translate3d(0, 0, 0); 
+    }
+    to{
+        width: 20%;
+        transform: translate3d(0%, 0%, 0); 
+    }
+}
